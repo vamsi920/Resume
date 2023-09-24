@@ -1,0 +1,252 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Venkata Vamsi Devadula} \\ \vspace{1pt}
+    Jersey City, New Jersey 07303 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 201-744-4665 ~ \href{mailto:vammu920@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vammu920@gmail.com}} ~ 
+    \href{https://linkedin.com/in/vamsi920/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vamsi920}}  ~
+    \href{https://github.com/vamsi920}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/vamsi920}}
+
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Stevens Institute of Technology}{September 2022 -- December 2023}
+      {Masters of Science in Computer Science}{Hoboken, New Jersey}
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur}{August 2018 -- May 2022}
+      {Bachelor of Technology in Computer Science and Engineering}{India}
+  \resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages and Frameworks}{: Javascript, Python, C++, CSharp, Shell Script, SQL, NoSQL, GraphQL, React.js, React Native, Node.js, Jest, Flask, MongoDB, Redux, Version Control, Bootstrap, Android/IOS, Swift } \\
+     \textbf{Developer Tools}{: Amazon Web Services, Firebase, Git, Android Studio, NGINX, Google Cloud Platform, Trello, Postman, Docker, Gitlab, Jenkins, Terraform, Helm, Azure, GCP, ELK Stack, DynamoDB} \\   
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AIShiksha, Sponsored by Amazon (AWS Inc.)}{Dec 2019 -- June 2021}
+      {Software Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Developed, tested, and maintained application programs of varying degrees of complexity using \textbf{React, MongoDB Node.js, Express.js,} etc., in an Agile environment, writing 3000+ lines of code in \textbf{JavaScript} and \textbf{Mongoose}. }
+        \resumeItem{Designed and hosted a highly scalable \textbf{MongoDB} database in \textbf{AWS} with \textbf{automated backups} and \textbf{auto-fail management}, taking full ownership of the company’s database and containerizing the application using \textbf{Docker} and \textbf{Kubernetes}.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PlanyticsAI, Inc}{April 2021 -- July 2021}
+      {Backend Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Developed a robust data pre-processing pipeline for the company using \textbf{Python}, successfully cleaned and restructured data, and implemented multiple graph algorithms to enhance data parsing accuracy.}
+        \resumeItem{Integrated full-stack modules using \textbf{React.js, Node.js, Firebase, and Neo4J} to develop and manage prototype architecture, creating \textbf{CI/CD} pipelines using \textbf{Jenkins} and Building the whole architecture using \textbf{Terraform}.}
+    \resumeItemListEnd
+
+      \resumeSubheading
+      {Shubu Artificial Intelligence Pvt Ltd}{April 2021 -- June 2021}
+      {Full-Stack Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Built testing frameworks for the backend system and pre-processed data into the required corpus using \textbf{Python}.}
+        \resumeItem{Managed development milestones using \textbf{Firebase} and \textbf{MERN stack} frameworks in a \textbf{Test-Driven} environment.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Rappel} $|$ \emph{React Native, Google Maps API, Firebase, PaperIO}}{June 2021}
+          \resumeItemListStart
+            
+            \resumeItem{Designed and developed a location-based mobile application using React Native, which achieved 95\% accuracy in task reminders for users, improving productivity and ensuring timely completion of tasks}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Dikhu $|$ }React Native, JavaScript, Express, Node, Firebase, Google Maps, IBM}{January 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an app that gives users the safest shelter around during a Tsunami alert, with the height of the wave getting calculated from the seismograph measures with 98.01\% accuracy using IBM ML tools.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{ApnaInsti} $|$ \emph{React Native}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{Created a React Native app for IIT Kharagpur students, offering easy access to campus resources like course info, library services.}
+          \resumeItemListEnd 
+           \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Kgpamica} $|$ \emph{React Native}}{September 2019}
+          \resumeItemListStart
+            \resumeItem{Created a React Native mobile application for students on my campus to access essential curriculum resources quickly.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements / Extracurricular}
+
+            \resumeItemListStart
+                \resumeItem{\textbf{Gold medal in Tech Hackathon} | Inter IIT Tech (2019), India.}
+                \resumeItem{Appointed as a \textbf{Core Tech Developer} for Indian Institute of Technology, Kharagpur.}
+                \resumeItem{\textbf{Founder of App Development Club}, Indian Institute of Technology, Kharagpur. }
+  \resumeItemListEnd 
+
+
+\end{document}
